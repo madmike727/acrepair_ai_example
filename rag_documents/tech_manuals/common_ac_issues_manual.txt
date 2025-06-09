@@ -1,0 +1,41 @@
+AC Troubleshooting Guide - Common Issues - Revision 4.2
+
+Section 1: Unit Not Cooling / Blowing Warm Air
+
+Symptoms:
+- Air from vents is room temperature or warm.
+- Outdoor unit fan may or may not be running.
+- Indoor blower fan is running.
+
+Potential Causes & Checks:
+1.1 Thermostat Settings: Verify thermostat is set to COOL mode and the set temperature is below the current room temperature. Check for dead batteries in digital thermostats.
+1.2 Air Filter: A severely dirty or clogged air filter restricts airflow over the evaporator coil, preventing proper cooling. **Action:** Inspect and replace filter if dirty. Recommend monthly checks to customer.
+1.3 Outdoor Unit Obstruction: Ensure the outdoor condenser unit has at least 2 feet of clear space around it for proper airflow. Remove any debris, leaves, or vegetation blocking the coils.
+1.4 Circuit Breakers: Check the electrical panel for tripped breakers labeled "AC," "Air Handler," or "Condenser." Reset if necessary. Caution: If breakers trip repeatedly, suspect a deeper electrical issue requiring diagnosis.
+1.5 Refrigerant Level: Low refrigerant charge (leak) is a common cause. Symptoms may include ice buildup on refrigerant lines or the evaporator coil. **Action:** Requires EPA-certified technician to check pressures, locate leak, repair, and recharge system. Do NOT simply top off refrigerant without leak search. Standard pressures vary by system type (R410a vs R22) and ambient temperature. Consult pressure charts.
+1.6 Dirty Condenser Coils: Outdoor coils dissipate heat. If dirty, heat transfer is inefficient. **Action:** Inspect coils. If significantly dirty, perform coil cleaning using approved non-acidic cleaner.
+1.7 Capacitor Failure: Start/Run capacitors assist motor startup and operation (compressor, fans). Failure can prevent compressor or fan motor from starting, often accompanied by humming noise. **Action:** Requires qualified technician to safely discharge and test capacitors using a multimeter with capacitance setting. Replace with exact MFD/Voltage rating if failed.
+1.8 Compressor Issues: Internal compressor failure is less common but serious. May present as tripped breakers, loud noises, or failure to start. **Action:** Requires advanced diagnostics (checking windings, amperage draw). Often leads to compressor replacement.
+
+Section 2: Unit Freezing Up / Ice on Lines
+
+Symptoms:
+- Visible ice or frost on the copper refrigerant lines (usually the larger, insulated suction line).
+- Ice may form on the indoor evaporator coil.
+- Reduced airflow from vents.
+- Eventual lack of cooling.
+
+Potential Causes & Checks:
+2.1 Airflow Restriction: MOST COMMON CAUSE. See 1.2 (Dirty Air Filter). Also check for blocked vents, dirty indoor blower wheel, or collapsed ductwork. Proper airflow is crucial to prevent coil temperature dropping below freezing.
+2.2 Low Refrigerant Charge: See 1.5. Low pressure causes the evaporator coil to become too cold.
+2.3 Malfunctioning Blower Motor: If the indoor fan isn't running at the correct speed (or at all), airflow is reduced. See 1.7 (Capacitor) or check motor itself.
+2.4 Thermostat Issues: Stuck contacts or miscalibration. Less common.
+
+Section 3: Error Codes (Example Model Series: XYZ Pro)
+
+E1: High Pressure Fault. Check condenser coil cleanliness, condenser fan operation, potential refrigerant overcharge.
+E4: Low Pressure Fault. Check for refrigerant leak, dirty air filter, evaporator coil icing, TXV/Piston issue.
+E10: Communication Error. Check wiring between indoor/outdoor units and thermostat. Check control boards.
+F2: Outdoor Temperature Sensor Fault. Test sensor resistance against temperature chart. Replace if out of spec.
+
+--- End of Sample ---

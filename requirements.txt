@@ -1,0 +1,10 @@
+streamlit
+google-generativeai
+langchain
+langchain-google-genai
+langchain_community
+pypdf # For loading PDF documents
+chromadb # Vector store
+python-dotenv # Optional, for local env vars if not using secrets.toml
+streamlit-authenticator # Recommended for better auth, but using simple for now
+bcrypt # Needed by streamlit-authenticator if you switch
