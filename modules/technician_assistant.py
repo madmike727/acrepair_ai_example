@@ -1,3 +1,13 @@
+# --- FIX for ChromaDB on Streamlit Sharing ---
+# This is a "monkey patch" to use a more modern version of SQLite
+# that is required by ChromaDB.
+# See: https://docs.trychroma.com/troubleshooting#sqlite
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+# --- END FIX ---
+
+# Now you can import your other libraries
 import streamlit as st
 from utils.rag import setup_rag_chain, query_rag, BASE_DOC_DIR # Import BASE_DOC_DIR for display
 import os
