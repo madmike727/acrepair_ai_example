@@ -56,9 +56,8 @@ def display_app():
     # --- Module Selection ---
     st.sidebar.header("Assistant Tools")
 
-    # Define the modules and their corresponding functions/titles
-    # Using a dictionary makes it easier to manage
-    modules = {
+    # Define ALL modules and their corresponding functions
+    all_modules = {
         "Customer Chatbot": customer_chatbot.show_customer_chatbot,
         "Technician Assistant": technician_assistant.show_technician_assistant,
         "Job Summary Generator": job_summary.show_job_summary,
@@ -69,11 +68,30 @@ def display_app():
         "Manage Knowledge Base": rag_manager.show_rag_manager,
     }
 
+    # Create a list of modules that the current user can click on.
+    # We check if the username is 'admin'.
+    is_admin = st.session_state.get('username') == 'admin'
+    enabled_module_keys = list(all_modules.keys())
+
+    if not is_admin:
+        # If the user is NOT an admin, remove the management tool from the clickable list.
+        enabled_module_keys.remove("Manage Knowledge Base")
+
+    # Create the radio button group ONLY with the enabled modules for the current user.
     selected_module_title = st.sidebar.radio(
         "Choose a tool:",
-        list(modules.keys()), # Get the titles for the radio button options
-        key="main_module_selection"
+        enabled_module_keys, # Use the filtered list of module titles
+        key="main_module_selection",
+        label_visibility="collapsed" # Hides the label for a cleaner look
     )
+
+    # If the user is NOT an admin, we manually display the disabled option using styled markdown.
+    if not is_admin:
+        st.sidebar.markdown(
+            "⚪ <span style='color: #888; font-style: italic;'>Manage Knowledge Base (Admin only)</span>",
+            unsafe_allow_html=True
+        )
+
     st.sidebar.markdown("---")
 
     # --- Logout Button ---
@@ -81,27 +99,23 @@ def display_app():
         logout_user()
 
     # --- Display Selected Module in Main Area ---
-    # Find the function associated with the selected title
-    module_function = modules.get(selected_module_title)
+    # Find the function associated with the selected title from the 'all_modules' dictionary
+    module_function = all_modules.get(selected_module_title)
 
     if module_function:
         # Display the title of the selected module in the main area
-        # Extract icon from the module's title if defined there (optional enhancement)
-        # e.g., if MODULE_TITLE = "🛠️ Technician Assistant", extract "🛠️"
         module_icon = ""
         try:
-            # Attempt to get title from the module itself if it defines one
             mod_title = getattr(module_function.__module__, 'MODULE_TITLE', selected_module_title)
             if " " in mod_title:
                  icon_part = mod_title.split(" ")[0]
-                 # Check if it looks like an emoji or icon
                  if len(icon_part) <= 2 and not icon_part.isalnum():
                       module_icon = icon_part
-        except: # Ignore errors if attribute isn't found or parsing fails
+        except:
             pass
 
         st.title(f"{module_icon} {selected_module_title}")
-        st.markdown("---") # Separator below title
+        st.markdown("---")
 
         # Call the function to display the selected module's UI
         module_function()
