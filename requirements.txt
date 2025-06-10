@@ -8,3 +8,4 @@ chromadb # Vector store
 python-dotenv # Optional, for local env vars if not using secrets.toml
 streamlit-authenticator # Recommended for better auth, but using simple for now
 bcrypt # Needed by streamlit-authenticator if you switch
+pysqlite3-binary
