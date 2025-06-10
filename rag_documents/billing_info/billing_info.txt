@@ -1,0 +1,23 @@
+## Standard Service Rates and Part Prices for CoolBreeze AC Repair ##
+
+# Labor Rates
+Standard Diagnostic Fee: $95.00 (covers first 30 minutes on site)
+Standard Hourly Labor Rate: $125.00/hour
+After-Hours/Emergency Labor Rate: $185.00/hour
+
+# Common Parts
+Run Capacitor (Universal, up to 45 MFD): $165.00 (includes installation)
+Contactor (2-pole): $190.00 (includes installation)
+Hard Start Kit: $225.00 (includes installation)
+Thermostat (Basic Digital, Non-Programmable): $150.00 (includes installation)
+Thermostat (Smart/WiFi, e.g., Nest/Ecobee): Quoted per job, starts at $350.00
+
+# Refrigerant
+Refrigerant Leak Search: $150.00 (up to 1 hour)
+R-410A Refrigerant: $85.00 per pound
+R-22 Refrigerant: $175.00 per pound (subject to availability)
+
+# Maintenance Services
+Annual "CoolCheck" Maintenance Tune-Up: $189.00 per system
+- Includes coil cleaning, drain line flush, electrical checks, and performance test.
+Filter Change (Standard 1-inch filter): $25.00 if done with another service.

@@ -1,0 +1,51 @@
+### SERVICE AGREEMENT TEMPLATES - CoolBreeze AC Repair ###
+
+--- START OF BASIC PLAN TEMPLATE ---
+**Service Agreement: Basic Annual Plan**
+
+This Service Agreement ("Agreement") is made on [CURRENT_DATE] between CoolBreeze AC Repair ("Company") and [CUSTOMER_NAME] ("Customer") of [CUSTOMER_ADDRESS].
+
+1.  **Covered Equipment**: This agreement covers the following HVAC equipment:
+    - [EQUIPMENT_LIST]
+
+2.  **Term**: This Agreement is for a term of one (1) year, beginning on [START_DATE].
+
+3.  **Services Provided**:
+    - **One (1) Annual "CoolCheck" Tune-Up**: A comprehensive inspection and cleaning service to ensure system efficiency.
+    - **10% Discount on Repairs**: Customer will receive a 10% discount on the total cost of any repairs needed during the term of this Agreement (parts and labor).
+    - **Priority Service**: Customer will receive priority scheduling over non-agreement customers.
+
+4.  **Agreement Price**: The total price for this Basic Annual Plan is **$[CONTRACT_PRICE]**.
+
+5.  **Exclusions**: This agreement does not cover the cost of refrigerant, parts, or labor for repairs. It is a maintenance and discount plan.
+
+**Signatures**:
+_________________________ (Customer)
+_________________________ (CoolBreeze AC Repair)
+--- END OF BASIC PLAN TEMPLATE ---
+
+
+--- START OF PREMIUM PLAN TEMPLATE ---
+**Service Agreement: Premium Semi-Annual Plan**
+
+This Service Agreement ("Agreement") is made on [CURRENT_DATE] between CoolBreeze AC Repair ("Company") and [CUSTOMER_NAME] ("Customer") of [CUSTOMER_ADDRESS].
+
+1.  **Covered Equipment**: This agreement covers the following HVAC equipment:
+    - [EQUIPMENT_LIST]
+
+2.  **Term**: This Agreement is for a term of one (1) year, beginning on [START_DATE].
+
+3.  **Services Provided**:
+    - **Two (2) "CoolCheck" Tune-Ups**: One in the spring (for cooling) and one in the fall (for heating).
+    - **15% Discount on Repairs**: Customer will receive a 15% discount on the total cost of any repairs needed during the term of this Agreement (parts and labor).
+    - **No Diagnostic Fees**: Customer will not be charged a diagnostic fee for any service calls during the term.
+    - **Guaranteed 24-Hour Service**: Customer is guaranteed a service appointment within 24 hours of their call.
+
+4.  **Agreement Price**: The total price for this Premium Semi-Annual Plan is **$[CONTRACT_PRICE]**.
+
+5.  **Exclusions**: This agreement does not cover the cost of replacement parts or refrigerant.
+
+**Signatures**:
+_________________________ (Customer)
+_________________________ (CoolBreeze AC Repair)
+--- END OF PREMIUM PLAN TEMPLATE ---

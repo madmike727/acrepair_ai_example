@@ -19,9 +19,11 @@ from modules import (
     customer_chatbot,
     job_summary,
     predictive_maintenance,
-    scheduling_optimizer,     # New
-    inventory_management,    # New
-    knowledge_search,        # New
+    scheduling_optimizer,
+    inventory_management,
+    knowledge_search,
+    invoice_generator,       # New
+    contract_creator,        # New
     rag_manager
 )
 import os # To help construct paths if needed
@@ -64,6 +66,8 @@ def display_app():
         "Predictive Maintenance": predictive_maintenance.show_predictive_maintenance,
         "Scheduling Assistant": scheduling_optimizer.show_scheduling_optimizer,
         "Inventory Assistant": inventory_management.show_inventory_management,
+        "Invoice Generator": invoice_generator.show_invoice_generator,          # New
+        "Contract Creator": contract_creator.show_contract_creator,            # New
         "Knowledge Base Search": knowledge_search.show_knowledge_search,
         "Manage Knowledge Base": rag_manager.show_rag_manager,
     }
