@@ -9,8 +9,8 @@ sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 # Now you can import your other libraries
 import streamlit as st
-import chromadb
-from langchain.vectorstores import Chroma
+# REMOVED: import chromadb
+# REMOVED: from langchain.vectorstores import Chroma
 from utils.auth import show_login_form, logout_user, is_authenticated
 from utils.gemini import configure_gemini
 # Import all modules from the 'modules' package
