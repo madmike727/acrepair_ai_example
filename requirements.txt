@@ -9,3 +9,6 @@ python-dotenv
 streamlit-authenticator
 bcrypt
 pysqlite3-binary
+
+# NEW: Add the specific Chroma integration package
+langchain-chroma
